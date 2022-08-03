@@ -5,7 +5,7 @@
     --texto-xl-800: 3.5rem;
     --texto-large-600: 3rem;
     --texto-medium-400: 1.5rem;
-    --texto-small-400: 1rem;
+    --texto-small-400: 1.2rem;
 
 }
  /* ----NORMALIZE----------------------- */
@@ -44,6 +44,11 @@ a {
     margin: 0 auto;
 }
 
+.main-container {
+    min-height: 80vh;
+    margin: 2rem 0;
+}
+
 .ver-mas {
     justify-self: end;
     align-self: flex-end;
@@ -56,10 +61,21 @@ a {
     margin-bottom: 2rem;
 }
 
+.centrar {
+    justify-self: center;
+    align-self: center;
+}
+
+.titulo-paginas {
+    padding-top: 5vh;
+    text-align: center
+    ;
+}
+
 
 
 body {
-    background: linear-gradient(135deg,#111111, #292929); 
+    background: linear-gradient(135deg,#000000, #4d4d4d); 
     background-repeat: no-repeat;
     color: white;
     font-size: var(--texto-small-400);
@@ -117,8 +133,8 @@ h4 {
     text-align: center;
     font-size: var(--texto-medium-400);
     text-shadow: 2px 2px 8px black;
-    border-radius: 44px;
-      
+    color: white;
+    border-radius: 1rem;     
     
 }
 
@@ -195,7 +211,7 @@ h4 {
 }
 
 .cards__info{
-    padding: 1rem 0;
+    padding: auto;
 }
 
 .cards__titulo {
@@ -203,6 +219,8 @@ h4 {
     font-weight: 900;
     text-align: center;
 }
+
+
 /* ------section PROYECTOS -----------------------*/
 #proyectos {
     display: grid;
@@ -235,6 +253,7 @@ h4 {
 
 .proyectos-card__img {
     grid-column: span 6;
+    max-height: 100%;
     object-fit:cover;
     
 }
@@ -248,9 +267,9 @@ h4 {
 
 }
 
+/* ------section NOSOTROS -----------------------*/
 #nosotros {
     display: grid;
-    /* grid-template-row: repeat(3,1fr); */
     padding: 0 10vw;
     justify-items: center;
 }
@@ -275,7 +294,7 @@ h4 {
     font-size: var(--texto-small-400);
     text-align: center;
 }
-
+/* ------section NECESITAS VIDEO -----------------------*/
 #necesitas-video {
     min-height: 100vh;
     display: flex;
@@ -294,7 +313,7 @@ h4 {
     font-weight: 900;
     margin-left: 2%;
 }
-
+/* ------section FOOTER -----------------------*/
 .footer-nav {
     display: flex;
     font-size: var(--texto-small-400);
@@ -316,11 +335,208 @@ h4 {
     max-width: 3rem;
 }
 
+/* ------------PAGINA CONTACTO------------------ */
+
+#formulario {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    min-height: 80vh;
+
+}
+
+.espacio-logo {
+    grid-column: span 6;
+    padding: 10rem 5rem;
+    max-width: 50rem;
+    margin: 0 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    
+}
+
+.card-form {
+    grid-column: span 6;
+    justify-self: flex-start;
+    align-self: center;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    height: 60%;
+    min-height: 460px;
+    width: 60%;
+    min-width: 360px;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.container-form__titulo {
+    font-size: var(--texto-large-600);
+    font-weight: 800;
+}
+
+.form-input {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.406);
+    font-size: var(--texto-medium-400);
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    color: white;
+
+}
+
+.form-textarea {
+    max-width: 100%;
+    height: 30%;
+}
+
+/* ------------PAGINA NOSOTROS------------------ */
+
+.trabajadores-container {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    overflow-x: hidden;
+    gap: 10rem;
+    margin: 10rem 0;
+
+}
+
+.trabajador {
+    display: flex;
+    justify-content: center;
+}
+
+.trabajador__img {
+    z-index: 0;
+    object-fit: cover;
+    max-width: 45rem;
+    transform: translate(50px,0);
+}
+
+.trabajador__info {
+    z-index: 1;
+    margin: 140px 0;
+    width: 70%;
+    max-width: 400px;
+    min-width: 400px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50px,0);
+    box-shadow: 0 5px 40px -5px rgb(0 0 0 / 80%);
+
+}
+
+.reverse-img {
+    transform: translate(-50px,0);
+}
+
+.reverse-info {
+    transform: translate(50px,0);
+}
+
+
+
+.trabajador__titulo {
+    font-size: var(--texto-large-600);
+    max-width: 70%;
+}
+
+.trabajador__texto {
+    font-size: var(--texto-small-400);
+    max-width: 70%;
+}
+
+/* ------------PAGINA SERVICIOS------------------ */
+
+
+.container-servicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2% 0%;
+
+}
+
+.card-servicio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 400px;
+    max-width: 250px;
+    justify-content: center;
+}
+
+.card-servicio__img{
+    padding: 10% 40%;
+    align-self: center;
+
+    
+}
+
+.cards-servicio__descripcion {
+    font-size: var(--texto-small-400);
+    width: 80%;
+    align-self: center;
+    text-align: justify;
+}
+
+.cards-servicio__titulo {
+    width: 80%;
+    font-size: var(--texto-medium-400);
+    align-self: center;
+    
+}
+
+/* ------------PAGINA PROYECTOS------------------ */
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+}
+
+.trabajo {
+    
+    position: relative;
+    grid-column: span 3;
+}
+
+.trabajo__img {
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
 
-@media (max-width: 700px){
+
+@media (max-width: 768px){
     :root {
 
         /* cambio de tamaño texto */
@@ -359,12 +575,48 @@ h4 {
         flex-direction: column;
         gap: 3rem;
     }
-  
+    /* ------------PAGINA CONTACTO------------------ */
+    .card-form {
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    .espacio-logo {
+        display: none;
+    }
+    /* ------------PAGINA nosotros.html ------------------ */
+
+    .trabajador__img {
+        max-width: 30rem;
+    }
+    
+    .trabajador__info {
+        margin: 110px 0;
+        width: 70%;
+        max-width: 250px;
+        min-width: 250px;
+ 
+    
+    }
+    /* ------------PAGINA trabajos.html ------------------ */
+
+    .trabajo {
+        grid-column: span 4;
+    }
+    
+    .trabajo__img {
+        
+        object-fit: cover;
+    }
+    
+ 
+
+          
 }
 
 
 
-@media (max-width: 400px){
+@media (max-width: 480px){
     
     .menu {
         flex-direction: column;
@@ -422,5 +674,72 @@ h4 {
         padding: 10% 10%;
         
     }
+    /* ------------PAGINA CONTACTO------------------ */
+    .container-form {
+        gap: 3rem;
+        width: 80%;
+        
+    }
+    
+    .card-form {
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    .espacio-logo {
+        display: none;
+    }
+    .card-form {
+        grid-column: span 12;
+        justify-self: center;
+        align-self: flex-start ;
+        margin: 5rem 0;
+
+        min-height: 360px;
+
+        min-width: 260px;
+    }
+    /* ------------PAGINA NOSOTROS------------------ */
+    .trabajador__img {
+        max-width: 100%;
+        max-height: 70vh;
+        /* transform: translate(-50px,0); */
+    }
+    
+    .trabajador__info {
+        margin: 50px 0;
+        width: 80%;
+        max-width: 175px;
+        min-width: 175px;
+        transform: translate(-70px,0);
+        text-align: end;
+ 
+    }
+
+    .reverse-img {
+        transform: translate(0,0);
+    }
+    
+    .reverse-info {
+        text-align: start;
+        transform: translate(70px,0);
+    }
+
+    .trabajador__titulo {
+        font-size: 2rem;
+
+    }
+    /* ------------PAGINA trabajos.html ------------------ */
+
+    .trabajo {
+        grid-column: span 12;
+    }
+    
+    .trabajo__img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
 
 }
+

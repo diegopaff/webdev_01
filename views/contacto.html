@@ -11,50 +11,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img class="header-logo" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
+    <!-- inicio header -->
+    <header class="header">
+        <nav class="header-nav container">
+            <a class="header-logo" href="../index.html"><img class="header-logo__img" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./servicios.html">servicios</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./servicios.html">servicios</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
-                </li>
-           </ul>
-       </nav>     
+            </ul>
+            <a class="menu__link" href="./contacto.html"><div class="btn"><span> Contacto</span></div></a>
+        </nav>     
     </header>
+    <!-- fin header -->
 
-    <main class="pagina-contacto"> 
+    <main class="pagina-contacto container"> 
         
             <section id="formulario">
             <img class="espacio-logo"src="../img/pyramid.png" alt="">
-            <div class="container-form">
-                <h1 class="container-form__titulo">CONTACTO</h1>
-                <form class="formulario" classaction="" method="post">
-                    <label for="nombre">Nombre completo:</label>
-                    <input id="nombre" type="text" name="nombre_apellido">
-                    <label for="mail">Correo:</label>
-                    <input id="mail" type="email" name="mail">
-                    <label for="consulta">Contanos sobre tu proyecto:</label>
-                    <textarea name="consulta" id="consulta"></textarea>
-                    <input class="btn" type="submit">
+            <div class="card-form">
+                <div class="container-form">
+                    <h1 class="container-form__titulo">CONTACTO</h1>
+                    <form class="formulario" classaction="" method="post">
+                        <label for="nombre">Nombre completo:</label>
+                        <input class="form-input" id="nombre" type="text" name="nombre_apellido">
+                        <label for="mail">Correo:</label>
+                        <input class="form-input" id="mail" type="email" name="mail">
+                        <label for="consulta">Contanos sobre tu proyecto:</label>
+                        <textarea class="form-input form-textarea" name="consulta" id="consulta"></textarea>
+                        <input class="btn centrar" type="submit">
 
-                </form>
-            </div>
+                    </form>
+                </div>
+            </div>  
 
         </section>
     </main>
-
-    <footer class="footer">
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
+<!-- inicio footer -->
+    <footer id="footer">
+        <nav class="footer-nav container">
+            <ul class="menu-footer">
                 <li class="barra-nav__item">
                     <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
@@ -65,13 +67,12 @@
                     <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
                 <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
+                    <a class="barra-nav__link" href="./contacto.html">Contacto</a>
                 </li>
-           </ul>
-        <p>Copyright © 2022 Pyramid Media, MVD</p>
-        </nav>
-       
+            </ul>
+            <img class="footer-img" src="../img/pyramid.png" alt="pyramid-logo">
+            <p>Copyright © 2022 Pyramid Media, MVD</p>
+        </nav> 
     </footer>
-   
 </body>
 </html>

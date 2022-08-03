@@ -11,55 +11,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img class="header-logo" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
+    <!-- inicio header -->
+    <header class="header">
+        <nav class="header-nav container">
+            <a class="header-logo" href="../index.html"><img class="header-logo__img" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./servicios.html">servicios</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./servicios.html">servicios</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
-                </li>
-           </ul>
-       </nav>     
+            </ul>
+            <a class="menu__link" href="./contacto.html"><div class="btn"><span> Contacto</span></div></a>
+        </nav>     
     </header>
-    <main> 
-        <article  class="trabajador">
-            <img class="trabajador-left__img" src="../img/generic-male.jpg" alt="proyecto montevideo vandal mix">
-            <div class="trabajador-left__info">
-                <h3 class="trabajador__titulo">Mauricio Carreño</h3>
-                <p class="trabajador__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus.</p>
-            </div>   
-        </article>
-        <article  class="trabajador">
-            
-            <div class="trabajador-right__info">
-                <h3 class="trabajador__titulo">Diego Curutchet</h3>
-                <p class="trabajador__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus.</p>
-            </div>
-            <img class="trabajador-right__img" src="../img/generic-male.jpg" alt="proyecto montevideo vandal mix">   
-        </article>
-        <article  class="trabajador">
-            <img class="trabajador-left__img" src="../img/generic-male.jpg" alt="proyecto montevideo vandal mix">
-            <div class="trabajador-left__info">
-                <h3 class="trabajador__titulo">Kike Antunez</h3>
-                <p class="trabajador__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus.</p>
-            </div>   
-            
-        </article>
-        <a href="../index.html">VOLVER A INICIO</a>
+    <!-- inicio main -->
+    <main>
+        <section class="trabajadores-container">
+            <article  class="trabajador">
+                <img class="trabajador__img" src="../img/generic-male.jpg" alt="proyecto montevideo vandal mix">
+                <div class="trabajador__info">
+                    <h3 class="trabajador__titulo">Mauricio Carreño</h3>
+                    <p class="trabajador__texto">Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel. Mel facilis sensibu ipsum dolor sit amet, cum sapientem honestatis ea, verear</p>
+                </div>   
+            </article>
+            <article  class="trabajador">
+                
+                <div class="trabajador__info reverse-info">
+                    <h3 class="trabajador__titulo">Diego Curutchet</h3>
+                    <p class="trabajador__texto">Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel. Mel facilis sensibu ipsum dolor sit amet, cum sapientem honestatis ea, verear</p>
+                </div>
+                <img class="trabajador__img reverse-img" src="../img/generic-male.jpg" alt="proyecto montevideo vandal mix">   
+            </article>
+            <article  class="trabajador">
+                <img class="trabajador__img" src="../img/generic-male.jpg" alt="proyecto montevideo vandal mix">
+                <div class="trabajador__info">
+                    <h3 class="trabajador__titulo">Kike Antunez</h3>
+                    <p class="trabajador__texto">Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel. Mel facilis sensibu ipsum dolor sit amet, cum sapientem honestatis ea, verear</p>
+                </div>   
+                
+            </article>
+        </section> 
     </main>
     
-    <footer class="footer">
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
+    <!-- inicio footer -->
+    <footer id="footer">
+        <nav class="footer-nav container">
+            <ul class="menu-footer">
                 <li class="barra-nav__item">
                     <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
@@ -70,12 +72,12 @@
                     <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
                 <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
+                    <a class="barra-nav__link" href="./contacto.html">Contacto</a>
                 </li>
-           </ul>
-        <p>Copyright © 2022 Pyramid Media, MVD</p>
-        </nav>
-       
+            </ul>
+            <img class="footer-img" src="../img/pyramid.png" alt="pyramid-logo">
+            <p>Copyright © 2022 Pyramid Media, MVD</p>
+        </nav> 
     </footer>
 </body>
 </html>

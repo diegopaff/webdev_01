@@ -11,60 +11,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img class="header-logo" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
+     <!-- inicio header -->
+     <header class="header">
+        <nav class="header-nav container">
+            <a class="header-logo" href="../index.html"><img class="header-logo__img" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./servicios.html">servicios</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./servicios.html">servicios</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
-                </li>
-           </ul>
-       </nav>     
+            </ul>
+            <a class="menu__link" href="./contacto.html"><div class="btn"><span> Contacto</span></div></a>
+        </nav>     
     </header>
-    <main> 
-        <h2>TRABAJOS</h2>
+    <!-- inicio main -->
+    <main class="main-container"> 
+        <h2 class="section-titulo titulo-paginas">ÚLTIMOS TRABAJOS</h2>
         <article class="proyectos">
             <section class="trabajo">
-                <a href=""><img  class="trabajo__img" src="../img/moon-hojillas.png" alt="hojillas moon"> </a>
+                <a  href=""><img class="trabajo__img" src="../img/moon-hojillas.png" alt="hojillas moon"> </a>
             </section>
             <section class="trabajo">
-                <a href=""><img  class="trabajo__img" src="../img/nymphadora.png" alt="hojillas moon"></a>
+                <a href=""><img class="trabajo__img" src="../img/nymphadora.png" alt="hojillas moon"></a>
             </section>
             <section class="trabajo">
-                <a href=""><img  class="trabajo__img" src="../img/vandals.png" alt="hojillas moon"></a>
+                <a href=""><img class="trabajo__img" src="../img/vandals.png" alt="hojillas moon"></a>
             </section>
             <section class="trabajo">
-               <a href=""> <img  class="trabajo__img"  src="../img/genexus.jpg" alt="hojillas moon"></a>
+               <a href=""> <img class="trabajo__img" src="../img/genexus.jpg" alt="hojillas moon"></a>
             </section>
             <section class="trabajo">
-                <a href=""><img  class="trabajo__img" src="../img/bucare.jpg" alt="hojillas moon"></a>
+                <a href=""><img class="trabajo__img" src="../img/bucare.jpg" alt="hojillas moon"></a>
             </section>
             <section class="trabajo">
-                <a href=""><img  class="trabajo__img" src="../img/moon-hojillas.png" alt="hojillas moon"></a>
+                <a href=""><img class="trabajo__img" src="../img/moon-hojillas.png" alt="hojillas moon"></a>
             </section>
             <section class="trabajo">
-                <a href=""><img  class="trabajo__img" src="../img/nymphadora.png" alt="hojillas moon"></a>
+                <a href=""><img class="trabajo__img" src="../img/nymphadora.png" alt="hojillas moon"></a>
             </section>
             <section class="trabajo">
-                <a href=""><img  class="trabajo__img" src="../img/vandals.png" alt="hojillas moon"></a>
+                <a href=""><img class="trabajo__img" src="../img/vandals.png" alt="hojillas moon"></a>
             </section>
             
         </article>
         
     </main>
     
-    <footer class="footer">
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
+    <!-- inicio footer -->
+    <footer id="footer">
+        <nav class="footer-nav container">
+            <ul class="menu-footer">
                 <li class="barra-nav__item">
                     <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
@@ -75,12 +76,12 @@
                     <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
                 <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
+                    <a class="barra-nav__link" href="./contacto.html">Contacto</a>
                 </li>
-           </ul>
-        <p>Copyright © 2022 Pyramid Media, MVD</p>
-        </nav>
-       
+            </ul>
+            <img class="footer-img" src="../img/pyramid.png" alt="pyramid-logo">
+            <p>Copyright © 2022 Pyramid Media, MVD</p>
+        </nav> 
     </footer>
 </body>
 </html>

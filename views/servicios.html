@@ -11,50 +11,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img class="header-logo" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
+    <!-- inicio header -->
+    <header class="header">
+        <nav class="header-nav container">
+            <a class="header-logo" href="../index.html"><img class="header-logo__img" src="../img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./servicios.html">servicios</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./servicios.html">servicios</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
-                <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
-                </li>
-           </ul>
-       </nav>     
+            </ul>
+            <a class="menu__link" href="./contacto.html"><div class="btn"><span> Contacto</span></div></a>
+        </nav>     
     </header>
-    <main>
-        <article class="container-servicio">
-            <h2 class="container-servicio__titulo">SERVICIOS</h2> 
+    <!-- inicio main -->
+    <main class="main-container">
+        <h2 class="section-titulo titulo-paginas">SERVICIOS</h2> 
+        <article class="container-servicio container">
             <section class="card-servicio">
                 <img class="card-servicio__img" src="../img/photoCam.png" alt="pyramid redes sociales">
-                <h3 class="cards__titulo">FOTOGRAFÍA</h3>
-                <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>                   
+                <h3 class="cards-servicio__titulo">FOTOGRAFÍA</h3>
+                <p class="cards-servicio__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>                   
             </section>
             <section class="card-servicio">
                 <img class="card-servicio__img" src="../img/videoCam.png" alt="pyramid eventos filmacion">
-                <h3 class="cards__titulo">PRODUCCIONES AUDIOVISUALES</h3>
-                <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>                           
+                <h3 class="cards-servicio__titulo">PRODUCCIONES AUDIOVISUALES</h3>
+                <p class="cards-servicio__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>                           
             </section>
             <section class="card-servicio">
                 <img class="card-servicio__img" src="../img/diseñoGrafico.png" alt="pyramid filmacion corporativa">
-                <h3 class="cards__titulo">DISEÑO GRÁFICO</h3>
-                <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>                      
+                <h3 class="cards-servicio__titulo">DISEÑO GRÁFICO</h3>
+                <p class="cards-servicio__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>                      
             </section>
         </article> 
         
     </main>
-    
-    <footer class="footer">
-        <nav class="barra-nav">
-            <ul class="barra-nav__menu">
+    <!-- inicio footer -->
+    <footer id="footer">
+        <nav class="footer-nav container">
+            <ul class="menu-footer">
                 <li class="barra-nav__item">
                     <a class="barra-nav__link" href="./nosotros.html">sobre nosotros</a>
                 </li>
@@ -65,12 +65,12 @@
                     <a class="barra-nav__link" href="./trabajos.html">nuestro trabajo</a>
                 </li>
                 <li class="barra-nav__item">
-                    <a class="barra-nav__link" href="./contacto.html"><div class="btn">Contacto</div></a>
+                    <a class="barra-nav__link" href="./contacto.html">Contacto</a>
                 </li>
-           </ul>
-        <p>Copyright © 2022 Pyramid Media, MVD</p>
-        </nav>
-       
+            </ul>
+            <img class="footer-img" src="../img/pyramid.png" alt="pyramid-logo">
+            <p>Copyright © 2022 Pyramid Media, MVD</p>
+        </nav> 
     </footer>
 </body>
 </html>
