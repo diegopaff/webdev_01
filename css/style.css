@@ -121,6 +121,11 @@ h4 {
 
 .menu__item {
     font-size: var(--texto-medium-400);
+    transition: all 0.2s;
+}
+
+li.menu__item:hover {
+    transform:translateY(-4px);
 }
 
 .btn {
@@ -134,8 +139,17 @@ h4 {
     font-size: var(--texto-medium-400);
     text-shadow: 2px 2px 8px black;
     color: white;
-    border-radius: 1rem;     
+    border-radius: 1rem;
+    transition: all 0.2s ease-in-out;  
     
+}
+
+div.btn:hover {
+    background-color: #307704;
+    border-color: #b5b5b5;
+    border-width: 3px;
+    border-style: solid;
+
 }
 
 /* ------section HERO -----------------------*/
@@ -234,7 +248,8 @@ h4 {
 .proyectos-card {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    max-height: 50vh;
+    min-height: 40vh;
+    width: 100%;
 
 }
 
@@ -253,8 +268,8 @@ h4 {
 
 .proyectos-card__img {
     grid-column: span 6;
-    max-height: 100%;
-    object-fit:cover;
+    /* max-height: 100%; */
+  /*   object-fit:cover; */
     
 }
 
@@ -429,9 +444,31 @@ h4 {
     z-index: 0;
     object-fit: cover;
     max-width: 45rem;
-    transform: translate(50px,0);
+    /* transform: translate(50px,0); */
+    position: relative;
+    animation-name: mov-left;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
+@keyframes mov-right {
+
+    0% {right:0px;}
+   
+    100% {right:50px;} 
+      
+  }
+
+@keyframes mov-left {
+
+    0% {left:0px;}
+   
+    100% {left:50px;} 
+      
+}
 .trabajador__info {
     z-index: 1;
     margin: 140px 0;
@@ -445,17 +482,23 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transform: translate(-50px,0);
     box-shadow: 0 5px 40px -5px rgb(0 0 0 / 80%);
-
+    position: relative;
+    animation-name: mov-right;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
+
 .reverse-img {
-    transform: translate(-50px,0);
+    animation-name: mov-right;
 }
 
 .reverse-info {
-    transform: translate(50px,0);
+    animation-name: mov-left;
 }
 
 
@@ -525,6 +568,16 @@ h4 {
     
     position: relative;
     grid-column: span 3;
+    transition: all 0.3s;
+    z-index: 0;
+    filter: grayscale(1);
+}
+
+section.trabajo:hover {
+    z-index: 1;
+    transform: scale(1.05);
+    filter: grayscale(0);
+    
 }
 
 .trabajo__img {
