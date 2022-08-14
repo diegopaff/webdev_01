@@ -4,8 +4,8 @@
     --texto-headline-900: 5rem;
     --texto-xl-800: 3.5rem;
     --texto-large-600: 3rem;
-    --texto-medium-400: 1.5rem;
-    --texto-small-400: 1.2rem;
+    --texto-medium-400: 2rem;
+    --texto-small-400: 1.6rem;
 
 }
  /* ----NORMALIZE----------------------- */
@@ -120,7 +120,7 @@ h4 {
 }
 
 .menu__item {
-    font-size: var(--texto-medium-400);
+    font-size: var(--texto-small-400);
     transition: all 0.2s;
 }
 
@@ -136,7 +136,7 @@ li.menu__item:hover {
     width: 16rem;
     height: 5rem;
     text-align: center;
-    font-size: var(--texto-medium-400);
+    font-size: var(--texto-small-400);
     text-shadow: 2px 2px 8px black;
     color: white;
     border-radius: 1rem;

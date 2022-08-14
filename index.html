@@ -5,82 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyramid Media</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dark text-light ms-xl-5 me-xl-5 ms-md-1 me-md-1">
     <!-- inicio header -->
     <header class="header">
-        <nav class="header-nav container">
-            <a class="header-logo" href="index.html"><img class="header-logo__img" src="./img/Logo Pyramid.png" alt="Logo Pyramid media"></a>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="./views/nosotros.html">sobre nosotros</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./views/servicios.html">servicios</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./views/trabajos.html">nuestro trabajo</a>
-                </li>
-                <!-- <li class="menu__item">
-                    <a class="menu__link" href="./views/contacto.html"><div class="btn"><span> Contacto</span></div></a>
-                </li> -->
-            </ul>
-            <a class="menu__link" href="./views/contacto.html"><div class="btn"><span> Contacto</span></div></a>
-        </nav>     
+        <nav class="navbar navbar-expand-lg bg-dark d-flex justify-content-center align-items-center flex-nowrap">
+            <div class="container ">
+              <a class="navbar-brand" href="index.html">
+                <img src="./img/Logo Pyramid.png" alt="Logo Pyramid media" width="60">
+              </a>
+            </div>
+            <div class="container-fluid justify-content-end ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav align-items-center">
+                    <a class="nav-link text-light" href="./views/nosotros.html">Sobre nosotros</a>
+                    <a class="nav-link text-light" href="./views/servicios.html">Servicios</a>
+                    <a class="nav-link text-light" href="./views/trabajos.html">Nuestro trabajo</a>  
+                    <a class="nav-link" href="./views/contacto.html"><button type="button" class="btn btn-outline-success">Contacto</button></a>
+                  </div>
+                </div>
+            </div>
+          </nav>
+   
     </header>
     <!-- fin header -->
     
     <main class="container">
         <!-- seccion INICIAL-HERO -------------------------------------------------->
         <section id="hero">
-            <article class="hero">
-                <img class="hero__logo-img" src="./img/pyramid.png" alt="Pyramid media logo">
-                <div class="hero__info">
-                    <h1 class="hero__titulo">SOMOS PYRAMID</h1>
-                    <h4 class="hero__subtitulo">Productora audiovisual</h4>
-                    <a href="./views/contacto.html"><div class="btn hero__btn">Creá con nosotros</div></a>
+            <article class="row align-items-center justify-content-center">
+                <img class="col-xl-6 col-md-6 col-sm-12 mw-50" src="./img/pyramid.png" alt="Pyramid media logo">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <h1 class="h1">SOMOS PYRAMID</h1>
+                    <h4 class="h4">Productora audiovisual</h4>
+                    <a href="./views/contacto.html"><button type="button" class="btn btn-outline-success">Creá con nosotros</button></a>
                 </div>
                   
         </section>
         <!-- separador con frase -------------------------------------------------->
     <section id="separador">
-        <article class="separador">
-            <h3 class="separador__txt">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error!"</h3>
+        <article class="separador bg-black mt-5 mb-5 pt-5 pb-5 ">
+            <h3 class="text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error!"</h3>
         </article>
     </section>
         
          <!-- seccion SERVICIOS -------------------------------------------------->
-        <section id="servicios">
-            <h2 class="section-titulo">SERVICIOS</h2> 
-            <div class="cards-container">  
-                <article class="cards">
-                    <img class="cards__img" src="./img/social-media.png" alt="pyramid redes sociales">
-                    <div class="cards__info">
-                        <h3 class="cards__titulo">REDES SOCIALES</h3>
-                        <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>
-                    </div>                   
-                </article>
-                <article class="cards">
-                    <img class="cards__img" src="./img/events.png" alt="pyramid eventos filmacion">
-                    <div class="cards__info">
-                        <h3 class="cards__titulo">EVENTOS</h3>
-                        <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p> 
-                    </div>                          
-                </article>
-                <article class="cards">
-                    <img class="cards__img" src="./img/corporate.png" alt="pyramid filmacion corporativa">
-                    <div class="cards__info">
-                        <h3 class="cards__titulo">CORPORATIVAS</h3>
-                        <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>
-                    </div>                      
-                </article>
+    <section class="card-group gap-3">
+        <article class="card  border-0">
+            <img src="./img/social-media.png" class="card-img-top p-2 bg-dark" alt="...">
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-center">Redes Sociales</h5>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
             </div>
-            <a class="ver-mas" href="./views/servicios.html">más>></a>
-        </section>
+        </article>
+        <article class="card border-0">
+            <img src="./img/events.png" class="card-img-top p-2 bg-dark" alt="...">
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-center">Eventos</h5>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+        </article>
+        <article class="card border-0">
+            <img src="./img/corporate.png" class="card-img-top p-2 bg-dark" alt="...">
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-center">Corporativas</h5>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p -->>
+        </article>
+    </section>
+        
         <!-- seccion ULTIMOS TRABAJOS -------------------------------------------------->
         <section id="proyectos">
             <h2 class="section-titulo">ÚLTIMOS TRABAJOS</h2> 
@@ -159,7 +163,7 @@
                     <a class="barra-nav__link" href="./views/contacto.html">Contacto</a>
                 </li>
             </ul>
-            <img class="footer-img" src="./img/pyramid.png" alt="pyramid-logo">
+            <!-- <img class="footer-img" src="./img/pyramid.png" alt="pyramid-logo"> -->
             <p>Copyright © 2022 Pyramid Media, MVD</p>
         </nav> 
     </footer>
