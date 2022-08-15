@@ -1,0 +1,96 @@
+
+a {
+    text-decoration: solid;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container-page-form {
+    min-height: 82vh;
+}
+
+.container-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    height: 60%;
+    min-height: 460px;
+    width: 60%;
+    min-width: 360px;
+}
+
+.container-nosotros {
+    height: 50vh;
+    max-height: 400px;
+}
+
+.img-nosotros {
+    height: 30vh;
+    max-height: 500px;
+}
+
+.img-form {
+    padding: 5rem;
+}
+
+/* ------section FOOTER -----------------------*/
+.footer-nav {
+    display: flex;
+    font-size: var(--texto-small-400);
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 1rem
+}
+.menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+
+.footer-img {
+    max-width: 3rem;
+}
+/* ------section NECESITAS VIDEO -----------------------*/
+#necesitas-video {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.necesitas-video__texto {
+    font-size: var(--texto-xl-800);
+    font-weight: 300;
+}
+
+.necesitas-video__negrita {
+    font-size: var(--texto-xl-800);
+    font-weight: 900;
+    margin-left: 2%;
+}
+
+
+@media (max-width: 768px){
+    :root {
+
+        /* cambio de tamaño texto */
+        --texto-headline-900: 4rem;
+        --texto-xl-800: 3rem;
+        --texto-large-600: 2rem;
+        --texto-medium-400: 1.5rem;
+        --texto-small-400: 1rem;
+    
+    }
+    .footer-nav {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
