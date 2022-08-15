@@ -8,8 +8,18 @@ li {
     list-style-type: none;
 }
 
+
 .container-page-form {
     min-height: 82vh;
+}
+
+.container-cards-servicios {
+    min-height:60vh
+}
+
+.container-carousel {
+    height: 400px;
+    width:600px;
 }
 
 .container-form {
@@ -33,6 +43,27 @@ li {
 
 .img-form {
     padding: 5rem;
+}
+
+.img-servicios {
+    /* padding: 0 10rem 0 10rem; */
+    width: 30%;
+    align-self: center;
+    max-width: 200px;
+}
+/* ------PAGINA NOSOTROS ----------- */
+.card-info-nosotors {
+    padding: 10rem 2rem 10rem 2rem;
+    max-width:40% ;
+}
+
+.card-nosotros {
+    height: 70vh;
+   /*  max-height: 500px; */
+}
+
+.card-img-nosotros {
+    justify-self: end;
 }
 
 /* ------section FOOTER -----------------------*/
