@@ -1,0 +1,21 @@
+/* ------section FOOTER -----------------------*/
+.footer-nav {
+    display: flex;
+    font-size: var(--texto-small-400);
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 1rem
+}
+.menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+
+.footer-img {
+    max-width: 3rem;
+}

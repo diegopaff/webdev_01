@@ -1,0 +1,27 @@
+
+/*__UTILITIES_________________*/
+@import 'utilities/variables';
+@import 'utilities/helpers';
+
+/*__BASE______________________*/
+@import 'base/reset';
+@import 'base/typo';
+
+/*__PARTIALS___________________*/
+@import 'partials/header';
+@import 'partials/footer';
+
+
+/*__COMPONENTS______________ */
+@import 'components/buttons';
+
+/* __PAGES_________________ */
+@import 'pages/home';
+@import 'pages/contacto';
+@import 'pages/nosotros';
+@import 'pages/servicios';
+@import 'pages/trabajos';
+
+@import 'utilities/responsive';
+
+

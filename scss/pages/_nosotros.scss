@@ -1,0 +1,91 @@
+/* ------------PAGINA NOSOTROS------------------ */
+
+.trabajadores-container {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    overflow-x: hidden;
+    gap: 10rem;
+    margin: 10rem 0;
+
+}
+
+.trabajador {
+    display: flex;
+    justify-content: center;
+    
+    &__img {
+        z-index: 0;
+        object-fit: cover;
+        max-width: 45rem;
+        /* transform: translate(50px,0); */
+        position: relative;
+        animation-name: mov-left;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+    }
+
+    &__info {
+        z-index: 1;
+        margin: 140px 0;
+        width: 70%;
+        max-width: 400px;
+        min-width: 400px;
+        background-color:var(--text-color);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 5px 40px -5px var(--color-primary);
+        position: relative;
+        animation-name: mov-right;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+    }
+
+    &__titulo {
+        font-size: var(--texto-large-600);
+        max-width: 70%;
+    }
+    
+    &__texto {
+        font-size: var(--texto-small-400);
+        max-width: 70%;
+    }
+}
+
+
+@keyframes mov-right {
+
+    0% {right:0px;}
+   
+    100% {right:50px;} 
+      
+  }
+
+  @keyframes mov-left {
+
+    0% {left:0px;}
+   
+    100% {left:50px;} 
+      
+}
+
+
+.reverse-img {
+    animation-name: mov-right;
+}
+
+.reverse-info {
+    animation-name: mov-left;
+}
+
+
+
