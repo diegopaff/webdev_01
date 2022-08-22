@@ -1,0 +1,29 @@
+/* ------------PAGINA PROYECTOS------------------ */
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+}
+
+.trabajo {
+    
+    position: relative;
+    grid-column: span 3;
+    transition: all 0.3s;
+    z-index: 0;
+    filter: grayscale(1);
+    
+    &:hover {
+        z-index: 1;
+        transform: scale(1.03);
+        filter: grayscale(0);
+        
+    }
+    &__img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+

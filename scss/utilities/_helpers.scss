@@ -1,0 +1,57 @@
+/* ------HELPERS -----------------------*/
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-container {
+    min-height: 76vh;
+    margin: 2rem 0;
+}
+
+.ver-mas {
+    justify-self: end;
+    align-self: flex-end;
+    font-size: var(--texto-small-400);
+    margin-top: 2rem;
+}
+
+.section-titulo {
+    font-size: var(--texto-large-600);
+    margin-bottom: 2rem;
+}
+
+.centrar {
+    justify-self: center;
+    align-self: center;
+}
+
+.titulo-paginas {
+    padding-top: 5vh;
+    text-align: center
+    ;
+}
+
+
+
+body {
+    background: var(--color-primary);
+    background-repeat: no-repeat;
+    color:var(--text-color);
+    font-size: var(--texto-small-400);
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: var(--texto-headline-900);
+    font-weight: 800;
+}
+
+h4 {
+    color:var(--text-color);
+    font-size: var(--texto-medium-400);
+    font-weight: 400;
+    
+}

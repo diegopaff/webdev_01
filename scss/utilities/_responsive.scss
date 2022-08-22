@@ -1,0 +1,206 @@
+/*__RESPONSIVE____________*/
+
+
+@media (max-width: 768px){
+
+    /* cambio de tamaño texto */
+    :root {
+        --texto-headline-900: 4rem;
+        --texto-xl-800: 3rem;
+        --texto-large-600: 2rem;
+        --texto-medium-400: 1.5rem;
+        --texto-small-400: 1rem;
+    }
+    
+    .header-nav{
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns:none;
+        grid-template-rows: repeat(2,fr);
+        align-items: center;
+        min-height: 70vh ;
+    }
+    .hero__logo {
+        grid-row: 1;
+        padding: 5rem 10rem;
+    }
+
+    .hero__info {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    /* ------------PAGINA CONTACTO------------------ */
+    .card-form {
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    .espacio-logo {
+        display: none;
+    }
+    /* ------------PAGINA nosotros.html ------------------ */
+
+    .trabajador__img {
+        max-width: 30rem;
+    }
+    
+    .trabajador__info {
+        margin: 110px 0;
+        width: 70%;
+        max-width: 250px;
+        min-width: 250px;
+ 
+    
+    }
+    /* ------------PAGINA trabajos.html ------------------ */
+
+    .trabajo {
+        grid-column: span 4;
+    }
+    
+    .trabajo__img {
+        
+        object-fit: cover;
+    }
+    
+ 
+
+          
+}
+
+
+
+@media (max-width: 480px){
+    
+    .menu {
+        flex-direction: column;
+        
+    }
+    :root {
+        /* cambio de tamaño texto */
+        --texto-headline-900: 3rem;
+        --texto-xl-800: 2rem;
+        --texto-large-600: 1.5rem;
+        --texto-medium-400: 1.25rem;
+        --texto-small-400: 1rem;
+    }   
+ 
+    .proyectos-card{
+        margin: 2rem 0;
+        gap: 1rem;
+    }
+
+    .proyectos-card__info {
+        grid-column: span 12;
+        color: var(--text-color);
+        gap: 1rem;
+        align-items: center;
+        background-color: inherit;
+    }
+
+    .reverse_order{
+        grid-row-start: 2;
+
+    }
+    
+
+    .proyectos-card__img {
+        grid-column: span 12;
+    }
+
+    .proyectos-card__texto {
+        display: none;
+        background-color: none;
+    
+    }
+
+    .cards-nos-container {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .cards-nos {
+        grid-column: span 1;
+        padding: 10% 10%;
+        
+    }
+    /* ------------PAGINA CONTACTO------------------ */
+    .container-form {
+        gap: 3rem;
+        width: 80%;
+        
+    }
+    
+    .card-form {
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    .espacio-logo {
+        display: none;
+    }
+    .card-form {
+        grid-column: span 12;
+        justify-self: center;
+        align-self: flex-start ;
+        margin: 5rem 0;
+
+        min-height: 360px;
+
+        min-width: 260px;
+    }
+    /* ------------PAGINA NOSOTROS------------------ */
+    .trabajador__img {
+        max-width: 100%;
+        max-height: 70vh;
+        /* transform: translate(-50px,0); */
+    }
+    
+    .trabajador__info {
+        margin: 50px 0;
+        width: 80%;
+        max-width: 175px;
+        min-width: 175px;
+        transform: translate(-70px,0);
+        text-align: end;
+ 
+    }
+
+    .reverse-img {
+        transform: translate(0,0);
+    }
+    
+    .reverse-info {
+        text-align: start;
+        transform: translate(70px,0);
+    }
+
+    .trabajador__titulo {
+        font-size: 2rem;
+
+    }
+    /* ------------PAGINA trabajos.html ------------------ */
+
+    .trabajo {
+        grid-column: span 12;
+    }
+    
+    .trabajo__img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+}
