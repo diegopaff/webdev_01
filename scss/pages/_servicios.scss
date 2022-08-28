@@ -2,22 +2,19 @@
 
 
 .container-servicio {
-    display: flex;
-    flex-direction: row;
+    @include flex-center(row);
     flex-wrap: wrap;
-    justify-content: center;
     gap: 5rem;
     padding: 2% 0%;
 
 }
 
 .card-servicio {
-    display: flex;
-    flex-direction: column;
+    @include flex-center(column);
     gap: 1rem;
     max-height: 400px;
     max-width: 250px;
-    justify-content: center;
+    
     
     &__img{
         padding: 10% 40%;

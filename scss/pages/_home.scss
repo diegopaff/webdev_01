@@ -27,8 +27,7 @@
 }
 /* ------section SEPARADOR -----------------------*/
 .separador {
-    display: flex;
-    justify-content: center;
+    @include flex-center(column);
     background-color: black;
     max-width: 100vw;
     height: 20vh;    
@@ -42,19 +41,15 @@
 }
 /* ------section SERVICIOS -----------------------*/
 #servicios {
-    display: flex;
+    @include flex-center(column);
     margin: 10vh 0;
-    flex-direction: column;
-    align-items: center;
     padding: 0 10vw;
     /* min-height: 100vh; */
 }
 .cards-container {
-    display: flex;
-    flex-direction: row;
+    @include flex-center(row);
     gap: 2rem;
     align-content: stretch;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -64,7 +59,7 @@
     flex: 1 1 180px;
     gap: 2rem;
     text-align: center;
-    background-color: var(--color-secondary); 
+    background-color: map-get($colores , secondary); 
     padding: 1rem 1rem;
     border-radius: 1rem;
     
@@ -105,15 +100,16 @@
         justify-content: center;
         flex-direction: column;
         gap: 2rem;
-        background-color: var(--text-color);
+        background-color: map-get($colores , text);
         padding: 0 10%;
-        color: var(--color-primary);
+        color: map-get($colores , primary);
         
     }
     
     &__img {
         grid-column: span 6;
-        
+        height: 100%;
+        object-fit: cover;
     }
 
         
@@ -138,10 +134,12 @@
 .cards-nos-container {
     display: grid;
     grid-template-columns: repeat(12,1fr);
+    width: 100%;
 }
 
 .cards-nos {
-    grid-column: span 4;   
+    grid-column: span 4;
+  
     
     &__titulo{
         font-size: var(--texto-medium-400);
@@ -157,10 +155,7 @@
 /* ------section NECESITAS VIDEO -----------------------*/
 .necesitas-video {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-center(column);
     
     &__texto {
         font-size: var(--texto-xl-800);

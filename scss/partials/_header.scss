@@ -29,7 +29,9 @@
 }
 
 li.menu__item:hover {
-    transform:translateY(-4px);
+    transform:translateY(-2px);
+    color: map-get($colores , to-action);
+    
 }
 
 

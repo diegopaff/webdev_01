@@ -2,10 +2,10 @@
 /*__UTILITIES_________________*/
 @import 'utilities/variables';
 @import 'utilities/helpers';
+@import 'utilities/mixins';
 
 /*__BASE______________________*/
 @import 'base/reset';
-@import 'base/typo';
 
 /*__PARTIALS___________________*/
 @import 'partials/header';

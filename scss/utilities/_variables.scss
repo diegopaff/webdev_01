@@ -6,9 +6,20 @@
     --texto-medium-400: 1.5rem;
     --texto-small-400: 1.2rem;
 
-    --color-primary: rgb(33, 37, 41);
-    --color-secondary: rgb(52, 58, 64); 
-    --color-secondary-light: rgb(173, 181, 189); 
+   /*  --color-primary: #181818;
+    --color-secondary: #242424; 
+    --color-secondary-light: rgb(142, 142, 142); 
     --color-to_action: #29bf12; 
-    --text-color:rgb(248, 249, 250);  
+    --text-color:rgb(248, 249, 250);  */ 
 }
+/* mapas */
+
+$colores: 
+(
+primary: #181818,
+secondary:#242424, 
+sec-light:rgb(142, 142, 142), 
+to-action:#29bf12, 
+text:rgb(248, 249, 250)
+);
+

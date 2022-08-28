@@ -17,7 +17,6 @@
         z-index: 0;
         object-fit: cover;
         max-width: 45rem;
-        /* transform: translate(50px,0); */
         position: relative;
         animation-name: mov-left;
         animation-duration: 1s;
@@ -33,14 +32,11 @@
         width: 70%;
         max-width: 400px;
         min-width: 400px;
-        background-color:var(--text-color);
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        background-color: map-get($colores , text);
+        color: map-get($colores , primary);
+        @include flex-center(column);
         text-align: center;
-        box-shadow: 0 5px 40px -5px var(--color-primary);
+        box-shadow: 0 5px 40px -5px map-get($colores , primary);
         position: relative;
         animation-name: mov-right;
         animation-duration: 1s;

@@ -1,25 +1,25 @@
 
 /* BOTONES */
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-to_action);
+    @include flex-center(column);
+    background: map-get($colores , to-action);
     width: 16rem;
     height: 5rem;
     text-align: center;
     font-size: var(--texto-medium-400);
-    text-shadow: 2px 2px 8px var(--color-primary);
-    color: var(--text-color);
+    text-shadow: 2px 2px 8px map-get($colores , primary);
+    color: map-get($colores , text);
     border-radius: 1rem;
     transition: all 0.2s ease-in-out;  
     
 }
 
 div.btn:hover {
-    background-color:var(--color-to_action);
-    border-color: var(--color-secondary-light);
-    border-width: 3px;
+    background-color: map-get($colores , to-action);
+    border-color: map-get($colores , secondary);
+    color: map-get($colores , primary);
+    text-shadow: 2px 2px 8px map-get($colores , sec-light);
+    border-width: 2px;
     border-style: solid;
 
 }

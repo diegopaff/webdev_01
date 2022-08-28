@@ -36,21 +36,21 @@
 
 
 body {
-    background: var(--color-primary);
+    background: map-get($colores , primary);
     background-repeat: no-repeat;
-    color:var(--text-color);
+    color: map-get($colores , text);
     font-size: var(--texto-small-400);
     font-weight: 400;
 }
 
 h1 {
-    color: var(--text-color);
+    color: map-get($colores , text);
     font-size: var(--texto-headline-900);
     font-weight: 800;
 }
 
 h4 {
-    color:var(--text-color);
+    color: map-get($colores , text);
     font-size: var(--texto-medium-400);
     font-weight: 400;
     

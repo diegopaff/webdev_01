@@ -103,7 +103,7 @@
 
     .proyectos-card__info {
         grid-column: span 12;
-        color: var(--text-color);
+        color: map-get($colores , text);
         gap: 1rem;
         align-items: center;
         background-color: inherit;
