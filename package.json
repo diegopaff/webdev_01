@@ -1,11 +1,11 @@
 {
-  "name": "proyectofinal_entregaflexgrid_curutchet",
+  "name": "proyectofinal_diego_curutchet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page for Pyramid Media",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/index.scss css/translated.css",
+    "build-css": "node-sass --include-path scss scss/index.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {

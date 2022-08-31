@@ -26,7 +26,18 @@
 .menu__item {
     font-size: var(--texto-medium-400);
     transition: all 0.2s;
+
 }
+
+.menu__item--active {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-radius: 2px;
+    
+
+}
+
+
 
 li.menu__item:hover {
     transform:translateY(-2px);
