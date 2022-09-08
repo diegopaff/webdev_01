@@ -39,9 +39,9 @@
     </header>
     <!-- fin header -->
     
-    <main class="container">
+    <main>
         <!-- seccion INICIAL-HERO -------------------------------------------------->
-        <section id="hero">
+        <section id="hero" class="container">
             <article class="hero">
                 <img class="hero__logo-img" src="./img/pyramid.png" alt="Pyramid media logo">
                 <div class="hero__info">
@@ -52,48 +52,57 @@
                   
         </section>
         <!-- separador con frase -------------------------------------------------->
-    <section id="separador">
-        <article class="separador">
-            <h3 class="separador__txt">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error!"</h3>
-        </article>
-    </section>
+        <section id="separador">
+            <article class="separador">
+                <video autoplay loop muted plays-inline>
+                    <source src="./img/gimball.mp4">
+                </video>
+                <h3 class="separador__txt">VAMOS A CONTAR   <span>TU HISTORIA</span> </h3>
+            </article>
+        </section>
         
          <!-- seccion SERVICIOS -------------------------------------------------->
-        <section id="servicios">
+        <section id="servicios" class="container">
             <h2 class="section-titulo">SERVICIOS</h2> 
             <div class="cards-container">  
                 <article class="cards">
-                    <img class="cards__img" src="./img/social-media.png" alt="pyramid redes sociales">
-                    <div class="cards__info">
-                        <h3 class="cards__titulo">REDES SOCIALES</h3>
-                        <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>
-                    </div>                   
+                    <a href="./views/servicios.html">
+                        <img class="cards__img" src="./img/social-media.png" alt="pyramid redes sociales">
+                        <div class="cards__info">
+                            <h3 class="cards__titulo">REDES SOCIALES</h3>
+                            <p class="cards__descripcion"> Cortos, directos, adaptados a cada plataforma y entregados casi al momento. Generamos contenido de alto impacto enfocado en dejar la imagen de tu marca bien posicionada.</p>
+                        </div>                   
+                    </a>
+                    </article>
+                <article class="cards">
+                    <a href="./views/servicios.html">
+                        <img class="cards__img" src="./img/events.png" alt="pyramid eventos filmacion">
+                        <div class="cards__info">
+                            <h3 class="cards__titulo">EVENTOS</h3>
+                            <p class="cards__descripcion">Creamos aftermovies de fiestas, eventos corporativos, ferias y congresos que ayudan a dar visibilidad y sacar el máximo partido a tu evento.</p> 
+                        </div>
+                    </a>                          
                 </article>
                 <article class="cards">
-                    <img class="cards__img" src="./img/events.png" alt="pyramid eventos filmacion">
-                    <div class="cards__info">
-                        <h3 class="cards__titulo">EVENTOS</h3>
-                        <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p> 
-                    </div>                          
-                </article>
-                <article class="cards">
-                    <img class="cards__img" src="./img/corporate.png" alt="pyramid filmacion corporativa">
-                    <div class="cards__info">
-                        <h3 class="cards__titulo">CORPORATIVAS</h3>
-                        <p class="cards__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus. Possimus delectus perspiciatis, consequuntur maiores tenetur veniam natus et illo dolorem harum modi ex dignissimos praesentium, non incidunt saepe?</p>
-                    </div>                      
+                    <a href="./views/servicios.html">
+                        <img class="cards__img" src="./img/corporate.png" alt="pyramid filmacion corporativa">
+                        <div class="cards__info">
+                            <h3 class="cards__titulo">CORPORATIVAS</h3>
+                            <p class="cards__descripcion">Creamos vídeos corporativos y de producto aportando nuestra visión publicitaria y estratégica para que logres tus objetivos de comunicación y marketing.</p>
+                        </div>
+                    </a>                     
                 </article>
             </div>
             <a class="ver-mas" href="./views/servicios.html">más>></a>
         </section>
         <!-- seccion ULTIMOS TRABAJOS -------------------------------------------------->
-        <section id="proyectos">
+        <section id="proyectos" class="container">
             <h2 class="section-titulo">ÚLTIMOS TRABAJOS</h2> 
             <article  class="proyectos-card">
                 <img class="proyectos-card__img" src="./img/vandals.png" alt="proyecto montevideo vandal mix">
                 <div class="proyectos-card__info">
                     <h3 class="proyectos-card__titulo">MVD Vandals MIX</h3>
-                    <p class="proyectos-card__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus.</p>
+                    <p class="proyectos-card__texto">Proyecto realizado para MVD Vandals en el lanzamiento de su nuevo Producto Vandals Mix.</p>
                     <div class="btn"><a href="" target="_blank">ver video</a></div>
 
                 </div>   
@@ -101,7 +110,7 @@
             <article class="proyectos-card">
                 <div class="proyectos-card__info reverse_order">
                     <h3 class="proyectos-card__titulo">Nymphadora</h3>
-                    <p class="proyectos-card__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus.</p>
+                    <p class="proyectos-card__texto">Contenido para redes sociales de Nymphadora, fotografía y reels.</p>
                     <div class="btn"><a href="" target="_blank">ver video</a></div>  
                 </div>
                 <img class="proyectos-card__img" src="./img/nymphadora.png" alt="brochas nymphadora"> 
@@ -110,7 +119,7 @@
                 <img class="proyectos-card__img" src="./img/moon-hojillas.png" alt="hojillas moon">
                 <div class="proyectos-card__info">
                     <h3 class="proyectos-card__titulo">MOON Hojillas</h3>
-                    <p class="proyectos-card__texto" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, odio repellendus.</p>
+                    <p class="proyectos-card__texto" >Contenido para resdes sociales, Video de producto para Moon Hojillas.</p>
                     <div class="btn"><a href="" target="_blank">ver video</a></div>
                 </div>
                    
@@ -118,7 +127,7 @@
             <a class="ver-mas" href="./views/trabajos.html">ver más proyectos >></a>
         </section>
         <!-- seccion NOSOTROS -------------------------------------------------->
-        <section id="nosotros">
+        <section id="nosotros" class="container">
             <h2 class="section-titulo">NOSOTROS</h2>
             <div class="cards-nos-container">  
                 <article class="cards-nos">
@@ -140,7 +149,7 @@
             <a class="ver-mas" href="./views/nosotros.html">conocé más de nosotros >></a>
         </section>
         <!-- seccion NECESITAS VIDEO -------------------------------------------------->
-        <section id="necesitas-video" class="necesitas-video">
+        <section id="necesitas-video" class="necesitas-video container">
             <p class="necesitas-video__texto"> ¿NECESITAS UN <b>VIDEO</b> ?</p>
             <!-- <p class="necesitas-video__negrita"> VIDEO</p> -->
             <div class="btn"><a href="./views/contacto.html" target="_blank">Comenzá ya!!</a></div>

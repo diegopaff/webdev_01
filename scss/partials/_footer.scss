@@ -6,7 +6,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
-    margin-top: 1rem
+    margin-top: 1rem;
+    border-width: 1px;
+    border-style: solid none none none;
+    border-color: grey;
+    padding-top: 2rem;
 }
 .menu-footer {
     display: flex;

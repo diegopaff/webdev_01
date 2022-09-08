@@ -121,7 +121,11 @@ li.menu__item:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  border-width: 1px;
+  border-style: solid none none none;
+  border-color: grey;
+  padding-top: 2rem; }
 
 .menu-footer {
   display: flex;
@@ -180,18 +184,27 @@ div.btn:hover, div.boton-form:hover {
 
 /* ------section SEPARADOR -----------------------*/
 .separador {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  align-content: flex-end;
   max-width: 100vw;
   height: 20vh; }
+  .separador video {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: 0 70%; }
   .separador__txt {
     font-size: var(--texto-xl-800);
-    font-weight: 200;
-    text-align: center;
+    font-weight: 800;
+    position: absolute;
     align-self: center; }
+  .separador span {
+    background-color: #29bf12;
+    padding: 0 6px; }
 
 /* ------section SERVICIOS -----------------------*/
 #servicios {
@@ -199,8 +212,9 @@ div.btn:hover, div.boton-form:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10vh 0;
+  margin: 10vh auto;
   padding: 0 10vw;
+  justify-self: center;
   /* min-height: 100vh; */ }
 
 .cards-container {
@@ -216,21 +230,27 @@ div.btn:hover, div.boton-form:hover {
   flex: 1 1 180px;
   gap: 2rem;
   text-align: center;
-  background-color: #242424;
+  background-color: #181818;
   padding: 1rem 1rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  min-height: 400px;
+  transition: all 0.2s; }
   .cards__info {
     padding: auto; }
   .cards__titulo {
     font-size: var(--texto-medium-400);
     font-weight: 900;
     text-align: center; }
+  .cards:hover {
+    transform: translateY(-5px);
+    background-color: #242424; }
 
-/* ------section PROYECTOS -----------------------*/
+/* ------section ULTIMOS TRABAJOS -----------------------*/
 #proyectos {
+  justify-self: center;
   display: grid;
   grid-template-rows: 3;
-  margin: 10vh 0;
+  margin: 10vh auto;
   padding: 0 10vw;
   justify-items: center; }
 
@@ -287,7 +307,8 @@ div.btn:hover, div.boton-form:hover {
   justify-content: center; }
   .necesitas-video__texto {
     font-size: var(--texto-xl-800);
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 3rem; }
   .necesitas-video__negrita {
     font-size: var(--texto-xl-800);
     font-weight: 900;
@@ -451,8 +472,8 @@ div.btn:hover, div.boton-form:hover {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  max-height: 400px;
-  max-width: 250px; }
+  max-height: 450px;
+  max-width: 350px; }
   .card-servicio__img {
     padding: 10% 40%;
     align-self: center; }

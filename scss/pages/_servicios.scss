@@ -12,8 +12,8 @@
 .card-servicio {
     @include flex-center(column);
     gap: 1rem;
-    max-height: 400px;
-    max-width: 250px;
+    max-height: 450px;
+    max-width: 350px;
     
     
     &__img{
