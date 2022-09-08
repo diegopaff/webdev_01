@@ -606,6 +606,16 @@ div.btn:hover, div.boton-form:hover {
     min-height: 360px;
     min-width: 260px; }
   /* ------------PAGINA NOSOTROS------------------ */
+  @keyframes mov-right {
+    0% {
+      right: 0px; }
+    100% {
+      right: 0px; } }
+  @keyframes mov-left {
+    0% {
+      left: 0px; }
+    100% {
+      left: 0px; } }
   .trabajador__img {
     max-width: 100%;
     max-height: 70vh;
